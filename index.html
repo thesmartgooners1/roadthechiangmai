@@ -363,60 +363,77 @@
     </section>
 
     <!-- ___________departments -->
-    <section class="department">
-        <h1 class="heading">Hospitals</h1>
-        <div class="row">
-           <div class="box3">
-    <a href="https://theworldmedicalhospital.com/">
-        <img src="hospital1.jpg" alt="hospital1.jpg" class="logo">
-    </a>
-</div>
+   <section class="client">
+    <div class="section-title">
+        <h2>Our Partners</h2>
+    </div>
 
-<div class="box3">
-    <a href="https://www.vimut.com/">
-        <img src="hospital2.jpg" alt="hospital2.jpg" class="logo">
-    </a>
-</div>
+    <div class="carousel-client">
+        <div class="slide"><img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo1.png" alt=""></div>
+        <div class="slide"><img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo2.png" alt=""></div>
+        <div class="slide"><img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo3.png" alt=""></div>
+        <div class="slide"><img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo1.png" alt=""></div>
+        <div class="slide"><img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo2.png" alt=""></div>
+        <div class="slide"><img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo3.png" alt=""></div>
+    </div>
+</section>
 
-<div class="box3">
-    <a href="https://www.medparkhospital.com/">
-        <img src="hospital3.jpg" alt="hospital3.jpg" class="logo">
-    </a>
-</div>
+<style>
+.client{
+    padding:60px 20px;
+    background:#eee;
+}
 
-<div class="box3">
-    <a href="https://ladpraohospital.com/">
-        <img src="hospital4.jpg" alt="hospital4.jpg" class="logo">
-    </a>
-</div>
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    position:relative;
+}
 
-<div class="box3">
-    <a href="https://share.google/6DWiQE9LGzLX9ytsc">
-        <img src="hospital5.jpg" alt="hospital5.jpg" class="logo">
-    </a>
-</div>
+.section-title h2{
+    font-size:24px;
+    text-transform:uppercase;
+    margin:0;
+}
 
-            <div class="box3">
-    <a href="https://www.chiangmairam.com/">
-        <img src="hospital6.jpg" alt="hospital6.jpg" class="logo">
-    </a>
-</div>
+.section-title::after{
+    content:"";
+    width:80px;
+    height:3px;
+    background:#fbb900;
+    display:block;
+    margin:10px auto 0;
+}
 
-            <div class="box3">
-    <a href="https://www.trsclasik.com/en">
-        <img src="hospital7.jpg" alt="hospital7.jpg" class="logo">
-    </a>
-</div>
-            
-<div class="box3">
-    <a href="https://www.bangkokhospital.com/th">
-        <img src="hospital8.jpg" alt="hospital8.jpg" class="logo">
-    </a>
-</div>
-            
-        </div>
-    </section>
+.slide{
+    text-align:center;
+}
 
+.slide img{
+    width:180px;
+    height:auto;
+    margin:auto;
+    display:block;
+}
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('.carousel-client').bxSlider({
+        auto: true,
+        slideWidth: 234,
+        minSlides: 2,
+        maxSlides: 5,
+        controls: false,
+        pager: true
+    });
+});
+</script>
     <footer id="contact">
       <div class="section__container footer__container">
         <div class="footer__col">
