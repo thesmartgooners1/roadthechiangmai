@@ -362,78 +362,124 @@
       </div>
     </section>
 
-    <!-- ___________departments -->
-   <section class="client">
+   <!-- PARTNER SECTION -->
+<section class="client">
     <div class="section-title">
         <h2>Our Partners</h2>
     </div>
 
-    <div class="carousel-client">
-        <div class="slide"><img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo1.png" alt=""></div>
-        <div class="slide"><img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo2.png" alt=""></div>
-        <div class="slide"><img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo3.png" alt=""></div>
-        <div class="slide"><img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo1.png" alt=""></div>
-        <div class="slide"><img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo2.png" alt=""></div>
-        <div class="slide"><img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo3.png" alt=""></div>
+    <div class="slider">
+        <div class="slide-track">
+
+            <div class="slide">
+                <img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo1.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo2.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo3.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo1.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo2.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo3.png" alt="">
+            </div>
+
+            <!-- Duplicate for smooth infinite scroll -->
+
+            <div class="slide">
+                <img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo1.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo2.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo3.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo1.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo2.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo3.png" alt="">
+            </div>
+
+        </div>
     </div>
 </section>
 
 <style>
 .client{
-    padding:60px 20px;
+    width:100%;
+    padding:60px 0;
     background:#eee;
+    overflow:hidden;
 }
 
 .section-title{
     text-align:center;
-    margin-bottom:50px;
-    position:relative;
+    margin-bottom:40px;
 }
 
 .section-title h2{
-    font-size:24px;
-    text-transform:uppercase;
     margin:0;
+    font-size:28px;
+    font-weight:700;
+    text-transform:uppercase;
 }
 
-.section-title::after{
-    content:"";
-    width:80px;
-    height:3px;
-    background:#fbb900;
-    display:block;
-    margin:10px auto 0;
+.slider{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+}
+
+.slide-track{
+    display:flex;
+    width:calc(250px * 12);
+    animation:scroll 25s linear infinite;
 }
 
 .slide{
-    text-align:center;
+    width:250px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .slide img{
     width:180px;
+    max-width:100%;
     height:auto;
-    margin:auto;
-    display:block;
+    object-fit:contain;
+}
+
+@keyframes scroll{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(calc(-250px * 6));
+    }
 }
 </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-<script>
-$(document).ready(function(){
-    $('.carousel-client').bxSlider({
-        auto: true,
-        slideWidth: 234,
-        minSlides: 2,
-        maxSlides: 5,
-        controls: false,
-        pager: true
-    });
-});
-</script>
     <footer id="contact">
       <div class="section__container footer__container">
         <div class="footer__col">
